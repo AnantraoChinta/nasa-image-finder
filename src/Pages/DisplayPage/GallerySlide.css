@@ -1,0 +1,70 @@
+.slider-container {
+
+    width: 100%;          /* Make the slider responsive */
+    max-width: 800px;     /* Match your `.gallery` width */
+    margin: 0 auto;       /* Center the slider */
+    position: relative;
+    overflow: visible;
+
+}
+
+
+/* Slides */
+.slick-slide {
+    display: flex !important;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;     /* Center content vertically */
+    box-sizing: border-box;
+    height: auto;            /* Allow dynamic height */
+    width: 100% !important;  /* Ensure each slide takes up the full width of the slider */
+}
+
+/* Optional: Add space between slides */
+.slick-track {
+    display: flex !important;
+    align-items: center;
+    gap: 0; 
+}
+
+.gallery-arrows {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.slick-arrow {
+    position: absolute; /* Ensure the arrows are absolutely positioned */
+    z-index: 10; /* Higher z-index to ensure they stay on top of the content */
+}
+
+/* Style the previous arrow (left) */
+.slick-arrow.prev {
+    left: -60px; /* Distance from the left side of the container */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical centering */
+    z-index: 10;
+
+    width: 50px;
+    height: 50px;
+
+}
+
+/* Style the next arrow (right) */
+.slick-arrow.next {
+    left: 820px; /* Distance from the right side of the container */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical centering */
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+ 
+}
+
+.loading-text {
+    font-size: 45px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}

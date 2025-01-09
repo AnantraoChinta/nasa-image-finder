@@ -1,0 +1,147 @@
+.search-container {
+    /* Activate a flexbox for the different items in the search interface */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+  }
+  
+  .header-box {
+    background-color: #FAECFD;
+    border-radius: 10px;
+    padding: 0px 15px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    
+  }
+  
+  .header-box h1 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 41.47px;
+    color: #000000;
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 400;
+  
+  }
+  
+  .query-form {
+    /* Activate a flexbox for the different items in the search interface */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
+  
+  .search-bar {
+    height: 15px;
+  }
+  
+  .search-bar input {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    padding: 5px;
+    
+    border-style: solid;
+    border-width: thick;
+    border-radius: 10px;
+    border-color: #15418C;
+  
+  }
+  
+  .year-range-container {
+    /* Activate a flexbox to create a container to horizontally hold the elements involved 
+    for selecting the range of years. */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .range-text h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+  }
+  
+  .custom-dropdown select {
+    appearance: none;
+  
+  
+    border: 3px solid #15418C;
+    border-radius: 8px;     
+    padding: 5px; 
+    font-size: 12px; 
+    width: 60px;
+    background-color: white;
+    cursor: pointer;
+    z-index: 1;
+  
+  }
+  
+  /* Style the upper triangle */
+  .triangle-up {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 8px;
+    height: auto;
+    /* Makes sure image appear over the drop down, not under */
+    z-index: 2;
+  }
+  
+  /* Style the lower triangle */
+  .triangle-down {
+    position: absolute;
+    top: 18px;                   
+    right: 8px;
+    width: 8px;
+    height: auto;
+    /* Makes sure image appear over the drop down, not under */
+    z-index: 2;
+  }
+  
+  /* Helps arrows be right on top of each other */
+  .drop-arrows {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-button input{
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 23.7px;
+    align-content: center;
+    font-family: 'Space Mono', sans-serif;
+  
+    color: white;              /* White text */
+    background-color: #15418C;    /* Blue background */
+    border: none;              /* Remove border */
+    border-radius: 10px;        /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+  
+  }
+
+  .error-text {
+    background-color: red;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+  

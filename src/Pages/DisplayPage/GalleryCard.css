@@ -1,0 +1,93 @@
+.gallery {
+    position: relative;
+    background-color: #FAECFD;
+    display: flex;
+    flex-direction: row; /* Maintain your layout */
+    height: 500px;       /* Set a fixed height for consistent slides */
+    width: 800px;        /* Set a fixed width */
+    gap: 30px;           /* Maintain spacing between child elements */
+    border-radius: 10px;
+    margin-top: 40px;
+    overflow: hidden;    /* Prevent children from overflowing */
+
+}
+
+.divider {
+    width: 1px;
+    background-color: #000000;
+    height: 80%;
+
+    align-self: center;
+}
+
+
+
+.left-half {
+    flex: 1; /* Takes up 50% of the parent */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* This centers the content horizontally */
+    justify-content: flex-start;
+    padding-left: 20px;
+    gap: 25px;
+}
+  
+.right-half {
+
+    flex: 1; /* Each half takes up 50% of the parent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;  
+    padding-right: 10px;
+    margin-top: 30px;
+
+    overflow: hidden;
+}
+
+
+
+.left-half h1 {
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 250px;
+    text-align: center;
+
+    padding-top: 10px;
+
+    
+    word-wrap: break-word;
+    
+}
+.left-half img {
+    /* width: 500px; */
+    /* height: 300px; */
+    max-height: 50%; 
+    max-width: 95%;
+    object-fit: cover;
+
+    align-self: center;
+
+}
+
+.left-half h2 {
+
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.scrollable-text {
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    width: 95%;
+    height: 400px;
+    align-self: center;
+    overflow: auto;
+
+}

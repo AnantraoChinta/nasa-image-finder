@@ -1,10 +1,24 @@
-const App = () => {
-  // Replace this with your code
+import React from "react";
+import LandingPage from "../src/Pages/LandingPage/LandingPage"
+import DisplayPage from "../src/Pages/DisplayPage/DisplayPage"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+
+
+const App: React.FC = () => {
   return (
-    <div>
-      <h1>Spring 2025 Hack4Impact-UMD Technical Application Assessment</h1>
-    </div>
+    <BrowserRouter>
+        <Routes>
+  
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/display" element={<DisplayPage />} />
+  
+        </Routes>
+    </BrowserRouter>
   );
+
 };
+
+
 
 export default App;
